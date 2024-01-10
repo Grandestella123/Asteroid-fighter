@@ -207,7 +207,8 @@ let rockets_fired = 0
 rockets_fired += 1
 time_since = game.runtime()
 fire_break = 1000
-let list = [img`
+let list = [
+img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -224,7 +225,8 @@ let list = [img`
     . . . . . . . c . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
-    `, img`
+    `,
+img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . c c c c . . 
     . c c c c c . c c c c c f c c . 
@@ -241,7 +243,8 @@ let list = [img`
     . . . . c b b b 6 6 c . . . . . 
     . . . . . c a 6 6 b c . . . . . 
     . . . . . . . c c c . . . . . . 
-    `, img`
+    `,
+img`
     . . . . . . c c c . . . . . . . 
     . . . . . 5 5 5 c c c . . . . . 
     . . . c 5 c f 5 5 5 5 c . . . . 
@@ -258,7 +261,26 @@ let list = [img`
     b b 5 c 5 b 5 5 . . . . . . . . 
     5 b 6 b b 5 c . . . . . . . . . 
     . 5 5 b c . . . . . . . . . . . 
-    `]
+    `,
+img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `
+]
 game.splash("Try to destroy as many asteroids as you can before the time runs out! we are counting on you soldier!")
 info.startCountdown(30)
 effects.starField.startScreenEffect()
